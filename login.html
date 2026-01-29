@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود به حساب کاربری</title>
+  <link rel="stylesheet" href="css/stuly.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body class="login-page" style="background-color: #b38b635f;">
+  <div class="site-content">
+    <header class="site-header" style="background-color: #9b79577b;">
+      <div class="container">
+        <div class="brand">
+          <div class="logo"> <img src="image/m.jpg" alt="مبل مدرن کرم"></div>
+          <div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="index m.html">محصولات</a></li>
+            <li><a href="about1.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس</a></li>
+            <li><a href="stores.html">شعبه</a></li>
+            <li><a href="login.html">ارتباط</a></li>
+
+          </ul>
+        </nav>
+
+
+      </div>
+    </header>
+ <main class="auth-section" id="login">
+        <div class="auth-container">
+          
+            <input type="radio" name="auth-tab" id="login-radio" class="tab-radio" checked>
+            <input type="radio" name="auth-tab" id="register-radio" class="tab-radio">
+            
+         
+            <div class="auth-tabs">
+                <label for="login-radio" class="auth-tab active">ورود به حساب</label>
+                <label for="register-radio" class="auth-tab">ثبت نام جدید</label>
+            </div>
+            
+         
+            <form class="auth-form" id="login-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="loginEmail"><i class="fas fa-envelope"></i> ایمیل</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="example@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword"><i class="fas fa-lock"></i> رمز عبور</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="رمز عبور خود را وارد کنید" required>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+                    <label style="display: inline-flex; align-items: center; cursor: pointer;">
+                        <input type="checkbox" style="margin-left: 8px;">
+                        مرا به خاطر بسپار
+                    </label>
+                    
+                    <a href="#" style="color: #4b2b06; text-decoration: none; font-size: 0.9rem;">
+                        رمز عبور را فراموش کرده اید؟
+                    </a>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%; padding: 15px; font-size: 1.1rem;">
+                    <i class="fas fa-sign-in-alt"></i> ورود به حساب
+                </button>
+            </form>
+            
+     
+            <form class="auth-form" id="register-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="registerName"><i class="fas fa-user"></i> نام کامل</label>
+                    <input type="text" id="registerName" class="form-control" placeholder="نام و نام خانوادگی" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerEmail"><i class="fas fa-envelope"></i> ایمیل</label>
+                    <input type="email" id="registerEmail" class="form-control" placeholder="example@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerPhone"><i class="fas fa-phone"></i> تلفن همراه</label>
+                    <input type="tel" id="registerPhone" class="form-control" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerPassword"><i class="fas fa-lock"></i> رمز عبور</label>
+                    <input type="password" id="registerPassword" class="form-control" placeholder="حداقل ۸ کاراکتر" required minlength="8">
+                </div>
+                
+                <div class="form-group">
+                    <label for="registerConfirmPassword"><i class="fas fa-lock"></i> تکرار رمز عبور</label>
+                    <input type="password" id="registerConfirmPassword" class="form-control" placeholder="تکرار رمز عبور" required>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%; padding: 15px; font-size: 1.1rem;">
+                <i class="fas fa-user-plus"></i> ایجاد حساب کاربری
+                </button>
+            </form>
+            
+      
+            <div style="text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee; color: #4d2e03f4;">
+                <p>با ورود یا ثبت نام، با <a href="#" style="color: #81664a;">قوانین و مقررات</a> موافقت می کنید.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+  <footer id="contact" style="height:500%;margin-top: 0;background-color: #bea07c74; color: #432202; padding: 2rem 10%; font-family: Vazirmatn, sans-serif; direction: rtl;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+        <div style="margin-bottom: 1rem;">
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">گالری مبلمان موسویان</h3>
+            <p style="font-size: 0.9rem;">بهترین کیفیت و طراحی در مبلمان، استفاده از مواد اولیه مرغوب، تجربه‌ای بی‌نظیر در دکوراسیون منزل شما.</p>
+        </div>
+        <div>
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">دسترسی سریع</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="index.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">صفحه اصلی</a>
+                </li>
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="about1.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">درباره ما</a>
+                </li>
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="index m.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">محصولات</a>
+                </li>
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="stores.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">شعبه ها</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">تماس با ما</h3>
+            <div style="margin-bottom: 0.5rem;">
+                <p style="font-size: 0.9rem;"><i class="fas fa-map-marker-alt" style="margin-left: 0.5rem;"></i> کاشان، خیابان ...</p>
+                <p style="font-size: 0.9rem;"><i class="fas fa-phone" style="margin-left: 0.5rem;"></i> 031-55555555</p>
+                <p style="font-size: 0.9rem;"><i class="fas fa-envelope" style="margin-left: 0.5rem;"></i> info@mousavian.com</p>
+            </div>
+        </div>
+        <div>
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">ما را در صفحات مجازی دنبال کنید</h3>
+            <div style="margin-top: 1rem;">
+                <a href="#" style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background-color: rgba(121, 85, 72, 0.1); color: #795548; margin-left: 0.5rem; transition: background-color 0.3s;"
+                   onmouseover="this.style.backgroundColor='#c2a785b1';"
+                   onmouseout="this.style.backgroundColor='rgba(121, 100, 72, 0.1)';"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background-color: rgba(121, 85, 72, 0.1); color: #795548; margin-left: 0.5rem; transition: background-color 0.3s;"
+                   onmouseover="this.style.backgroundColor='#c2a785b1';"
+                   onmouseout="this.style.backgroundColor='rgba(121, 85, 72, 0.1)';"><i class="fab fa-telegram"></i></a>
+                <a href="#" style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background-color: rgba(121, 85, 72, 0.1); color: #795548; margin-left: 0.5rem; transition: background-color 0.3s;"
+                   onmouseover="this.style.backgroundColor='#c2a785b1';"
+                   onmouseout="this.style.backgroundColor='rgba(121, 85, 72, 0.1)';"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(121, 85, 72, 0.1); font-size: 0.9rem; color: #5d4037;">
+        گالری مبلمان موسویان - تمامی حقوق این سایت محفوظ است
+    </div>
+</footer>
+
+</body>
+
+</html>

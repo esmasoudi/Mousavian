@@ -1,0 +1,85 @@
+/* تنظیمات اصلی کانتینر واکنش‌گرا */
+.responsive-section {
+    max-width: 1200px;
+    width: 90%; /* حاشیه امنی در کناره‌ها ایجاد می‌کند */
+    margin: 40px auto; /* مرکزیت و فاصله از بالا/پایین */
+    background-color: #c7b195a5;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    display: flex; /* فعال‌سازی Flexbox */
+    flex-direction: row; /* پیش‌فرض: چیدمان افقی */
+    align-items: center;
+    gap: 30px; /* فاصله بین دو ستون */
+}
+
+/* تنظیمات بخش متنی */
+.text-content {
+    flex: 1; /* اجازه می‌دهد این بخش فضای موجود را اشغال کند */
+    text-align: right;
+}
+.text-content h2 {
+    color: #4f2b0b;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.text-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* تنظیمات بخش ویدیو */
+.video-wrapper {
+    flex: 1; /* اجازه می‌دهد این بخش فضای موجود را اشغال کند */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #856a4a;
+    overflow: hidden;
+}
+.video-wrapper video {
+    max-width: 100%; /* ویدیو هرگز از عرض والد خود بزرگتر نخواهد شد */
+    height: auto; /* حفظ نسبت تصویر */
+    display: block;
+    border-radius: 6px;
+}
+
+/* ------------------------------------ */
+/* Media Query برای واکنش‌گرایی (Responsive) */
+/* ------------------------------------ */
+@media (max-width: 992px) { 
+    /* برای تبلت‌ها و دستگاه‌های کوچک‌تر */
+    .responsive-section {
+        flex-direction: column; /* تغییر چیدمان به عمودی */
+        text-align: center; /* سنتر کردن متن در حالت عمودی */
+    }
+    .text-content {
+        padding: 0;
+    }
+    .text-content h2 {
+        font-size: 2em; /* کوچک‌تر کردن فونت عنوان */
+    }
+    .video-wrapper {
+        width: 100%; /* عرض کامل برای ویدیو در حالت عمودی */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* برای موبایل‌های کوچک‌تر */
+    .responsive-section {
+        padding: 20px; /* کاهش فاصله داخلی کلی */
+        width: 95%;
+    }
+    .text-content h2 {
+        font-size: 1.8em; 
+    }
+    .text-content p {
+        font-size: 1em;
+    }
+}

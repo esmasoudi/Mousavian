@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>گالری مبلمان موسویان </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stuly.css">
+
+</head>
+
+<body style="background-color: #b38b6339;">
+  <div class="site-content">
+    <header class="site-header" style="background-color: #9b79578a;">
+      <div class="container">
+        <div class="brand">
+          <div class="logo"> <img src="image/m.jpg" alt="مبل مدرن کرم"></div>
+          <div>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="index m.html">محصولات</a></li>
+            <li><a href="about1.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس</a></li>
+            <li><a href="stores.html">شعبه</a></li>
+            <li><a href="login.html">ارتباط</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy appear delay-1">
+          <h1 style="color: #3d2106; text-align: center;">گالری مبلمان موسویان طراحی مدرن و راحتی</h1>
+          <p style="color: #70441b;">کالکشن‌های منتخب مبلمان راحتی، مبل ال، مبل تخت‌شو و ست‌های نشیمن با رنگ‌های نود،
+            خاکی و کرم — ارسال سریع و گارانتی کیفیت</p>
+          <div class="hero-actions">
+          </div>
+
+          <div class="features" style="margin-top:22px">
+            <div class="feature appear delay-2">
+              <h4>کیفیت بالای ساخت</h4>
+              <p>اسکلت محکم، فوم استاندارد و پارچه‌های ضدلک</p>
+            </div>
+            <div class="feature appear delay-3">
+              <h4>تحویل سریع</h4>
+              <p>ارسال در کوتاه‌ترین زمان و بسته‌بندی حرفه‌ای</p>
+            </div>
+          </div>
+        </div>
+
+<style>
+  /* استایل کارت و متن‌ها */
+  .hero-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #fff;
+      margin: 20px;
+      text-align: center;
+      max-width: 400px; /* محدود کردن عرض کارت */
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .hero-card .mini {
+      margin-bottom: 15px;
+  }
+  .hero-card .mini div:first-child { /* عنوان اصلی */
+      font-weight: 800;
+      color: rgb(61, 33, 2);
+      font-size: 20px;
+  }
+  .hero-card .mini div:last-child { /* زیرنویس */
+      color: rgb(63, 32, 2);
+      font-size: 14px;
+  }
+
+  /* استایل عکس اسلاید */
+  .slide-container {
+      position: relative; /* برای موقعیت‌دهی عکس‌ها */
+      width: 100%;
+      overflow: hidden; /* پنهان کردن عکس‌هایی که خارج از کادر هستند */
+      border-radius: 6px;
+      margin-top: 12px;
+      height: 300px; /* ارتفاع ثابت برای اسلاید، یا بر اساس نیازتان تنظیم کنید */
+  }
+  .slide-image {
+      position: absolute; /* عکس‌ها روی هم قرار می‌گیرند */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* عکس‌ها را طوری تنظیم می‌کند که کانتینر را پر کنند */
+      opacity: 0; /* در ابتدا همه عکس‌ها مخفی هستند */
+      transition: opacity 0.8s ease-in-out; /* افکت محو شدن نرم */
+      border-radius: 6px;
+  }
+  .slide-image.active {
+      opacity: 1; /* عکس فعال (نمایش داده شده) */
+  }
+
+  /* استایل دکمه‌ها */
+  .slide-controls {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center; /* دکمه‌ها در مرکز قرار می‌گیرند */
+      gap: 15px; /* فاصله بین دکمه‌ها */
+  }
+  .slide-controls button {
+      cursor: pointer;
+      padding: 8px 18px;
+      border: none;
+      background-color: rgb(61, 33, 2);
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .slide-controls button:hover {
+      background-color: rgb(90, 50, 5);
+  }
+</style>
+
+<style>
+  /* استایل کارت و متن‌ها */
+  .hero-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #fff;
+      margin: 20px;
+      text-align: center;
+      max-width: 400px; /* محدود کردن عرض کارت */
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .hero-card .mini {
+      margin-bottom: 15px;
+  }
+  .hero-card .mini div:first-child { /* عنوان اصلی */
+      font-weight: 800;
+      color: rgb(61, 33, 2);
+      font-size: 20px;
+  }
+  .hero-card .mini div:last-child { /* زیرنویس */
+      color: rgb(63, 32, 2);
+      font-size: 14px;
+  }
+
+  /* استایل عکس اسلاید */
+  .slide-container {
+      position: relative; 
+      width: 100%;
+      overflow: hidden; 
+      border-radius: 6px;
+      margin-top: 12px;
+      height: 300px; /* ارتفاع ثابت برای اسلاید، می‌توانید تغییر دهید */
+  }
+  .slide-image {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      opacity: 0; /* در ابتدا همه عکس‌ها مخفی هستند */
+      transition: opacity 0.8s ease-in-out; /* افکت محو شدن نرم (0.8 ثانیه) */
+      border-radius: 6px;
+  }
+  .slide-image.active {
+      opacity: 1; /* عکس فعال (نمایش داده شده) */
+  }
+
+  /* دکمه‌های کنترلی در این نسخه حذف شده‌اند */
+</style>
+
+<aside class="hero-card">
+  <div class="mini">
+    <div>کالکشن نود</div>
+    <div>مبلمان منتخب ۲۰۲۵</div>
+  </div>
+  
+  <!-- کانتینر برای عکس‌ها با افکت -->
+  <div class="slide-container">
+    <!-- عکس‌ها اینجا توسط جاوااسکریپت اضافه می‌شوند -->
+  </div>
+  
+  <!-- تگ اصلی شما که خالی بود (حذف شد تا شلوغی کم شود) -->
+  <!-- اگر این تگ برای اهداف دیگری لازم است، دوباره اضافه شود -->
+</aside>
+
+<script>
+  // آدرس عکس‌ها (مطابق با مسیردهی پروژه شما)
+  const images = [
+    "image/ch.jpg",
+    "image/c.jpg",
+    "image/cla.jpg",
+    "image/k.jpg"
+  ];
+
+  const slideInterval = 3000; // زمان چرخش: 3000 میلی‌ثانیه (3 ثانیه)
+  let currentIndex = 0;
+  const slideContainer = document.querySelector('.slide-container');
+
+  // تابع برای پیش‌بارگذاری عکس‌ها و اضافه کردن به DOM
+  function preloadAndSetup() {
+    images.forEach(imageUrl => {
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.classList.add('slide-image'); 
+      slideContainer.appendChild(img); 
+    });
+
+    const allSlideImages = slideContainer.querySelectorAll('.slide-image');
+    if (allSlideImages.length > 0) {
+      // نمایش اولین عکس
+      allSlideImages[currentIndex].classList.add('active'); 
+    }
+
+    // شروع چرخش خودکار پس از بارگذاری اولیه
+    setInterval(autoChangeSlide, slideInterval);
+  }
+
+  // تابع برای تغییر خودکار عکس
+  function autoChangeSlide() {
+    const allSlideImages = slideContainer.querySelectorAll('.slide-image');
+    
+    // عکس فعلی را غیرفعال کن
+    allSlideImages[currentIndex].classList.remove('active');
+    
+    // ایندکس را به‌روز کن
+    currentIndex = (currentIndex + 1) % images.length;
+    
+    // عکس بعدی را فعال کن (افکت محو شدن رخ می‌دهد)
+    allSlideImages[currentIndex].classList.add('active');
+  }
+
+  // اجرای تابع هنگام بارگذاری کامل صفحه
+  window.onload = preloadAndSetup;
+
+</script>
+
+
+
+<style>
+ 
+  .hero-card {
+      border: 1px solid #573211;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      max-width: 500px; 
+  }
+  .hero-card img {
+      width: 100%;
+      height: auto;
+  }
+  .mini {
+      display: flex;
+      align-items: center;
+  }
+  .mini div {
+      padding: 5px 0;
+  }
+
+  
+  @media (max-width: 576px) {
+    .hero-card {
+      padding: 12px; 
+      max-width: 95%; 
+      margin: 0 auto; 
+    }
+    
+    .hero-card div:first-child {
+        justify-content: center; 
+        text-align: center;
+    }
+    
+    .hero-card div:first-child > div {
+        text-align: center;
+    }
+
+    .hero-card h2 {
+        font-size: 1.2em; 
+    }
+    .hero-card div:nth-child(2) {
+        margin-top: 8px;
+    }
+    .hero-card div:nth-child(3) {
+        margin-top: 8px;
+    }
+  }
+</style>
+
+      </div>
+    </section>
+
+<section style="padding: 40px 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Tahoma, sans-serif; background-color: #b38b6339; direction: rtl;">
+  <div class="section-content" style="display: flex; flex-direction: row; align-items: center; max-width: 1200px; width: 100%; background-color: #c7b195a5; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); padding: 30px;">
+    
+    <div style="flex: 1; padding: 0 40px; text-align: right;">
+      <h2 style="color: #4f2b0b; font-size: 2.5em; margin-bottom: 20px; font-weight: 700;">
+        ریشه‌ها و اصالت در مبل فروشی موسویان
+      </h2>
+      <p style="font-size: 1.1em; margin-bottom: 15px; line-height: 1.8;">
+        مجموعه مبل فروشی موسویان فعالیت خود را از سال 1394 با یک رسالت اصلی آغاز کرد: احیای شکوه و کیفیت مبلمان کلاسیک و اصیل ایرانی، با تلفیق آن با طراحی‌های مدرن و کاربردی روز دنیا.
+      </p>
+      <p style="font-size: 1.1em; margin-bottom: 15px; line-height: 1.8;">
+        ما در موسویان معتقدیم که مبلمان فراتر از یک وسیله است؛ ستون اصلی آسایش یک خانه است. به همین دلیل، در تولید کلیه محصولاتمان، تنها از بهترین متریال درجه یک استفاده می‌شود؛ از اسکلت‌بندی‌های مستحکم چوبی و فلزی گرفته تا مرغوب‌ترین پارچه‌ها و فوم‌های حافظه‌دار، همگی با بهره‌گیری از پیشرفته‌ترین متد روز طراحی و ساخت، آماده ارائه به شما عزیزان می‌گردند
+      </p>
+    </div>
+
+    <div style="flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); background-color: #856a4a; overflow: hidden;">
+      <img src="image/pm.jpg" alt="تصویر نان روشا" style="max-width: 100%; height: auto; display: block; border-radius: 6px;">
+    </div>
+
+  </div>
+</section>
+<style>
+  @media (max-width: 768px) {
+    .section-content {
+      flex-direction: column !important;
+      padding: 20px !important;
+    }
+
+    .section-content > div {
+      flex: none !important;
+      width: 100% !important;
+      padding: 0 !important;
+      margin-bottom: 20px; 
+    }
+    
+    .section-content div:first-child {
+        padding: 0 !important;
+        text-align: right !important;
+    }
+
+    .section-content h2 {
+        font-size: 2em !important; 
+    }
+    
+    .section-content p {
+        font-size: 1em !important; 
+    }
+  }
+</style>
+
+
+
+    <section class="section" id="info-blocks">
+      <div class="container">
+        <div class="section-title">
+          <h2>محصولات منتخب</h2>
+        </div>
+        <div class="grid-products">
+           <article class="product appear delay-2">
+            <img src="image/ra.jpg" alt="مبل کویین فرانسوی کرمی">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل کویین فرانسوی - کرمی </h3>
+              <div class="price-row">
+                <div class="price">۲۱,۵۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+          
+  <article class="product appear delay-2">
+            <img src="image/ra.jpg" alt="مبل کویین فرانسوی کرمی">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل کویین فرانسوی - کرمی </h3>
+              <div class="price-row">
+                <div class="price">۲۱,۵۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product appear delay-1">
+            <img src="image/modern.jpg" alt="مبل مدرن کرم">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل مدرن — کرم</h3>
+              <div class="price-row">
+                <div class="price">۱۲,۸۰۰,۰۰۰ تومان</div>
+                <div class="tag">پرفروش</div>
+              </div>
+            </div>
+          </article>
+ <article class="product appear delay-2">
+            <img src="image/cla3.jpg" alt="مبل نئو کلاسیک">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل نئو کلاسیک</h3>
+              <div class="price-row">
+                <div class="price">۱۶,۴۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product appear delay-2">
+            <img src="image/ra.jpg" alt="مبل کویین فرانسوی کرمی">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل کویین فرانسوی - کرمی </h3>
+              <div class="price-row">
+                <div class="price">۲۱,۵۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product appear delay-2">
+            <img src="image/lo.jpg" alt="مبل کویین فرانسوی لورنزو">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل کویین فرانسوی - لورنزو</h3>
+              <div class="price-row">
+                <div class="price">۲۱,۵۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product appear delay-2">
+            <img src="image/cla3.jpg" alt="مبل نئو کلاسیک">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل نئو کلاسیک</h3>
+              <div class="price-row">
+                <div class="price">۱۶,۴۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+   <article class="product appear delay-2">
+            <img src="image/ra.jpg" alt="مبل کویین فرانسوی کرمی">
+            <!-- تگ </a> اضافی حذف شد -->
+            <div class="meta">
+              <h3>مبل کویین فرانسوی - کرمی </h3>
+              <div class="price-row">
+                <div class="price">۲۱,۵۰۰,۰۰۰ تومان</div>
+                <div class="tag">جدید</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+  </div> <!-- تگ بسته شدن اضافی در اینجا حذف شد -->
+
+ <footer id="contact" style="height: 500%;margin-top: 0;background-color: #bea07c71; color: #432202; padding: 2rem 10%; font-family: Vazirmatn, sans-serif; direction: rtl;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+        <div style="margin-bottom: 1rem;">
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">گالری مبلمان موسویان</h3>
+            <p style="font-size: 0.9rem;">بهترین کیفیت و طراحی در مبلمان، استفاده از مواد اولیه مرغوب، تجربه‌ای بی‌نظیر در دکوراسیون منزل شما.</p>
+        </div>
+        <div>
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">دسترسی سریع</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="index.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">صفحه اصلی</a>
+                </li>
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="about1.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">درباره ما</a>
+                </li>
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="index m.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">محصولات</a>
+                </li>
+                <li style="margin-bottom: 0.7rem;">
+                    <a href="stores.html" style="color: #795548; text-decoration: none; transition: color 0.3s; display: block;"
+                       onmouseover="this.style.color='#3e2723';"
+                       onmouseout="this.style.color='#795548';">شعبه ها</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">تماس با ما</h3>
+            <div style="margin-bottom: 0.5rem;">
+                <p style="font-size: 0.9rem;"><i class="fas fa-map-marker-alt" style="margin-left: 0.5rem;"></i> کاشان، خیابان ...</p>
+                <p style="font-size: 0.9rem;"><i class="fas fa-phone" style="margin-left: 0.5rem;"></i> 031-55555555</p>
+                <p style="font-size: 0.9rem;"><i class="fas fa-envelope" style="margin-left: 0.5rem;"></i> info@mousavian.com</p>
+            </div>
+        </div>
+        <div>
+            <h3 style="color: #795548; font-size: 1.2rem; margin-bottom: 1rem;">ما را در صفحات مجازی دنبال کنید</h3>
+            <div style="margin-top: 1rem;">
+                <a href="#" style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background-color: rgba(121, 85, 72, 0.1); color: #795548; margin-left: 0.5rem; transition: background-color 0.3s;"
+                   onmouseover="this.style.backgroundColor='#c2a785b1';"
+                   onmouseout="this.style.backgroundColor='rgba(121, 100, 72, 0.1)';"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background-color: rgba(121, 85, 72, 0.1); color: #795548; margin-left: 0.5rem; transition: background-color 0.3s;"
+                   onmouseover="this.style.backgroundColor='#c2a785b1';"
+                   onmouseout="this.style.backgroundColor='rgba(121, 85, 72, 0.1)';"><i class="fab fa-telegram"></i></a>
+                <a href="#" style="display: inline-block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background-color: rgba(121, 85, 72, 0.1); color: #795548; margin-left: 0.5rem; transition: background-color 0.3s;"
+                   onmouseover="this.style.backgroundColor='#c2a785b1';"
+                   onmouseout="this.style.backgroundColor='rgba(121, 85, 72, 0.1)';"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(121, 85, 72, 0.1); font-size: 0.9rem; color: #5d4037;">
+        گالری مبلمان موسویان - تمامی حقوق این سایت محفوظ است
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+ 
+
+  // ==== انیمیشن هنگام اسکرول پایین ====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-visible");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const revealItems = document.querySelectorAll("h2, h3, p, img, section, div");
+  revealItems.forEach(item => {
+    item.classList.add("animate-hidden");
+    observer.observe(item);
+  });
+
+  // ==== اسکرول نرم برای لینک‌های داخل صفحه ====
+  document.querySelectorAll("a[href^='#']").forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>
